@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Movie Apps</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <form id="form">
+                <label for="movies">Order by:</label>
+                <select class="filter" id="filter" onchange="getFilter(this)">
+                    <option value="release-date">Release Date</option>
+                    <option value="alphabetical" >Alphabetical</option>
+                    <option value="rating" >Rating</option>
+                </select>
+            </form>
+        </header>
+        <div class="book-details" id="book-details">
+            <select class="movie-list" id="movie-list">
+                <option value="">Select Movie</option>
+            </select>
+            <div class="book">Book</div>
+        </div>
+        <main id="main">
+            <div class="movie">
+                <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1040&q=80" alt="Image">
+                <div class="movie-title">
+                    <h3>Title</h3>
+                    <span class="popularity">9.1</span>
+                </div>
+            </div>   
+        </main>
+        <script src="script.js"></script>
+    </body>
+    
+</html>
